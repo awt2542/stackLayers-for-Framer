@@ -1,6 +1,6 @@
 # stackLayers for Framer.js
 
-Stack layers easily!
+Stack layers easily. Great for sorting or filtering lists. Give the function an array with layers and it will stack them according to the order inside the array.
 
 Examples:
 
@@ -17,16 +17,23 @@ Examples:
 More info about modules in Framer: [FramerJS Docs - Modules](http://framerjs.com/docs/#modules)
 
 
-## Examples
+## Basic example
 
-### Basic usage
+```coffeescript
+{stackLayers} = require 'stackLayers'
 
-	stackLayers arr, # array with layers
-		y: 0 # offset
-		margin: 0 # margin between items
-		animationOptions: 
-			curve: "spring(200,25)"
+layer1 = new Layer
+layer2 = new Layer
+layer3 = new Layer
+myList = [layer1,layer2,layer3]
 
+stackLayers myList,
+	y: 0 # the y position of the list
+	margin: 0 # margin between each item
+	animationOptions:
+		time: 0.5
+		curve: "ease-out"
+```
 
 ##Contact
 
