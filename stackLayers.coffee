@@ -1,5 +1,5 @@
 exports.stackLayers = (arr,opt = {}) ->
-	opt.margin ?= 10
+	opt.margin ?= 0
 	arr = _.where arr, {visible: true}
 	unless opt.y?
 		topLayer = _.min arr, (layer) -> layer.y
