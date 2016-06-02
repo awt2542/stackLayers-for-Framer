@@ -1,3 +1,6 @@
+
+Deprecated! I recommend this module, instead: [https://github.com/martenbjork/distribute-layers](https://github.com/martenbjork/distribute-layers)
+
 # stackLayers for Framer.js
 
 Stack layers easily. Great for sorting or filtering lists. Give the function an array with layers and it will stack them according to the order inside the array.
